@@ -384,6 +384,7 @@
 
     /* ─── Experience ─────────────────────────────────────────── */
     #experience { background: var(--bg); }
+    #research { background: var(--bg2); }
     .timeline { position: relative; padding-left: 32px; }
     .timeline::before {
       content: '';
@@ -532,7 +533,7 @@
     .skill-pill:hover { background: rgba(124,111,247,0.15); border-color: var(--accent1); }
 
     /* ─── Projects ───────────────────────────────────────────── */
-    #projects { background: var(--bg2); }
+    #projects { background: var(--bg); }
     .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .project-card {
       background: var(--card);
@@ -586,7 +587,7 @@
     .project-link:hover { color: var(--accent2); }
 
     /* ─── Achievements ───────────────────────────────────────── */
-    #achievements { background: var(--bg); }
+    #achievements { background: var(--bg2); }
     .ach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .ach-card {
       background: var(--card);
@@ -762,9 +763,10 @@
     <li><a href="#home"        class="active">Home</a></li>
     <li><a href="#about"              >About</a></li>
     <li><a href="#experience"         >Experience</a></li>
+    <li><a href="#research"           >Research</a></li>
+    <li><a href="#projects"           >Projects</a></li>
     <li><a href="#education"          >Education</a></li>
     <li><a href="#skills"             >Skills</a></li>
-    <li><a href="#projects"           >Projects</a></li>
     <li><a href="#achievements"       >Achievements</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
@@ -781,19 +783,19 @@
     <h1 class="hero-name">AADI<br>GUPTA</h1>
     <p class="hero-title">Machine Learning Engineer</p>
     <p class="hero-desc">
-      Passionate about building intelligent systems — from medical imaging pipelines to hybrid search
-      algorithms. Currently working at Datacurve.ai (YC W24) and pursuing dual BS degrees at BITS Pilani
-      &amp; Scaler School of Technology.
+      I build and evaluate machine learning systems, from vision-transformer research to ML
+      benchmark challenges and leaderboard solutions. Pursuing bachelor's degrees in Computer Science
+      at BITS Pilani &amp; Scaler School of Technology.
     </p>
     <div class="hero-btns">
       <a href="#contact" class="btn-primary"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
-      <a href="#projects" class="btn-outline"><i class="fa-solid fa-code"></i> View Projects</a>
+      <a href="#research" class="btn-outline"><i class="fa-solid fa-file-lines"></i> Read the Paper</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><div class="stat-num">8.3</div><div class="stat-label">CGPA</div></div>
-      <div class="stat"><div class="stat-num">3+</div><div class="stat-label">ML Projects</div></div>
-      <div class="stat"><div class="stat-num">GM</div><div class="stat-label">Kaggle Rank</div></div>
-      <div class="stat"><div class="stat-num">YC</div><div class="stat-label">W24 Backed</div></div>
+      <div class="stat"><div class="stat-num">8.26</div><div class="stat-label">CGPA (BITS)</div></div>
+      <div class="stat"><div class="stat-num">28</div><div class="stat-label">ML Benchmarks Built</div></div>
+      <div class="stat"><div class="stat-num">Top 1%</div><div class="stat-label">Kaggle Agent Security</div></div>
+      <div class="stat"><div class="stat-num">1</div><div class="stat-label">arXiv Paper</div></div>
     </div>
   </div>
 
@@ -805,11 +807,11 @@
     </div>
     <div class="floating-badge badge-top-left">
       <span class="badge-icon">🏆</span>
-      <span>Kaggle GrandMaster</span>
+      <span>Kaggle Silver Medal</span>
     </div>
     <div class="floating-badge badge-top-right">
-      <span class="badge-icon">🤖</span>
-      <span>ML Engineer @ YC W24</span>
+      <span class="badge-icon">📄</span>
+      <span>arXiv 2026 · Sole Author</span>
     </div>
     <div class="floating-badge badge-bottom">
       <span class="badge-icon">🎓</span>
@@ -826,40 +828,39 @@
     <div class="about-text reveal">
       <h2 class="section-title">Driven by <span>Intelligence</span></h2>
       <p>
-        I'm Aadi Gupta — a Machine Learning Engineer based in Bengaluru, India, with a deep passion
-        for building systems that learn, adapt, and solve hard problems. I thrive at the intersection
-        of research and engineering.
+        I'm Aadi Gupta, a Machine Learning Engineer and computer science student based in Bengaluru,
+        India. I care about honest evaluation: validation that mimics the real test shift, held-out
+        results, and reporting what didn't work.
       </p>
       <p>
-        Currently working as a Machine Learning Analyst at Shipd by Datacurve.ai (YC W24), where I
-        design private evaluation benchmarks for foundation model laboratories and push the capabilities
-        of AI coding agents.
+        From February to October 2026 I worked as a freelance Machine Learning Engineer on Project Eris
+        at Shipd by Datacurve.ai, designing 28 ML benchmark challenges and solving 25+ leaderboard challenges
+        under a 90-minute A10G budget.
       </p>
       <p>
-        As a Datasets GrandMaster and Notebook Expert on Kaggle, I bring rigorous experimentation
-        and reproducible pipelines to every project. I'm equally comfortable writing low-level
-        optimizations in C++ and training multi-modal transformer networks in PyTorch.
+        My sole-author paper on anchor routing for vision transformers is on arXiv, and its abstract
+        was accepted at IRIS'27 (IIT Madras).
       </p>
       <div class="about-highlights">
         <div class="highlight-card">
           <div class="highlight-icon"><i class="fa-solid fa-trophy"></i></div>
-          <h4>Kaggle GrandMaster</h4>
-          <p>Datasets GrandMaster & Notebook Expert</p>
+          <h4>Kaggle Silver Medal</h4>
+          <p>41st of 4,186 in AI Agent Security</p>
         </div>
         <div class="highlight-card">
-          <div class="highlight-icon"><i class="fa-solid fa-rocket"></i></div>
-          <h4>YC W24 Startup</h4>
-          <p>ML Analyst at Datacurve.ai</p>
+          <div class="highlight-icon"><i class="fa-solid fa-file-lines"></i></div>
+          <h4>arXiv Paper</h4>
+          <p>Sole author, vision transformers</p>
         </div>
         <div class="highlight-card">
-          <div class="highlight-icon"><i class="fa-solid fa-code-branch"></i></div>
-          <h4>Open Source</h4>
-          <p>Core Member, SST Open Source Society</p>
+          <div class="highlight-icon"><i class="fa-solid fa-flask"></i></div>
+          <h4>28 ML Benchmarks</h4>
+          <p>Designed for Shipd by Datacurve.ai</p>
         </div>
         <div class="highlight-card">
-          <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
-          <h4>Multi-Modal AI</h4>
-          <p>Computer Vision + NLP systems</p>
+          <div class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>LLM Agent Security</h4>
+          <p>Deferred Harmony Injection finding</p>
         </div>
       </div>
     </div>
@@ -875,7 +876,7 @@
       </div>
       <div class="info-row">
         <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-        <div class="info-content"><label>Email</label><span>aadigupta2007@yahoo.com</span></div>
+        <div class="info-content"><label>Email</label><span>aadi.24bcs10167@sst.scaler.com</span></div>
       </div>
       <div class="info-row">
         <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
@@ -890,8 +891,8 @@
         <div class="info-content"><label>GitHub</label><span>ARRY7686</span></div>
       </div>
       <div class="info-row">
-        <div class="info-icon"><i class="fa-solid fa-globe"></i></div>
-        <div class="info-content"><label>Company</label><span>datacurve.ai</span></div>
+        <div class="info-icon"><i class="fa-solid fa-chart-simple"></i></div>
+        <div class="info-content"><label>Kaggle</label><span>aadigupta7686</span></div>
       </div>
     </div>
   </div>
@@ -902,148 +903,76 @@
   <div class="section-label">Work Experience</div>
   <div class="divider"></div>
   <h2 class="section-title reveal">My <span>Journey</span></h2>
-  <p class="section-desc reveal">Real-world experience building production-grade ML systems.</p>
+  <p class="section-desc reveal">Designing ML benchmarks and solving them under a fixed compute budget.</p>
 
   <div class="timeline">
     <div class="timeline-item reveal">
       <div class="timeline-dot"></div>
       <div class="exp-card">
         <div class="exp-header">
-          <span class="exp-role">Machine Learning Analyst</span>
-          <span class="exp-badge">Contract · Remote</span>
+          <span class="exp-role">Freelance Machine Learning Engineer</span>
+          <span class="exp-badge">Freelance · Remote</span>
         </div>
-        <div class="exp-company">Shipd by Datacurve.ai (YC W24)</div>
+        <div class="exp-company">Shipd by Datacurve.ai (YC W24) — Project Eris</div>
         <div class="exp-meta">
-          <span><i class="fa-regular fa-calendar"></i> Feb 2026 – Present</span>
+          <span><i class="fa-regular fa-calendar"></i> Feb 2026 – Oct 2026</span>
           <span><i class="fa-solid fa-location-dot"></i> Remote</span>
         </div>
         <ul class="exp-bullets">
-          <li>Designed and developed private evaluation benchmarks for foundation model laboratories, enhancing machine learning engineering capabilities of AI coding agents.</li>
-          <li>Applied various data augmentation, feature engineering, and data preprocessing techniques to improve model performance.</li>
-          <li>Worked directly on improving the reliability and breadth of automated assessments used to train next-generation coding agents.</li>
+          <li>Designed and shipped 28 ML benchmark challenges (CV, NLP, seq2seq, recsys), each with a synthetic data generator, hidden-split grader and reference solution.</li>
+          <li>Solved 25+ leaderboard challenges under a 90-min A10G budget with 4-bit LoRA LLMs, frozen ViT probes and GBDT/MLP ensembles; private-LB finishes of 6th, 6th, 7th.</li>
+          <li>Built cross-validation that mimics each task's train/test shift; private scores landed within ±0.01 of CV across a 5-challenge audit.</li>
         </ul>
         <div class="tech-tags">
           <span class="tech-tag">PyTorch</span>
-          <span class="tech-tag">TensorFlow</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">NLP</span>
-          <span class="tech-tag">Computer Vision</span>
+          <span class="tech-tag">PEFT (LoRA)</span>
+          <span class="tech-tag">Vision Transformers</span>
+          <span class="tech-tag">LightGBM</span>
+          <span class="tech-tag">Cross-Validation Design</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ EDUCATION ══════════════════════════════════════════════ -->
-<section id="education">
-  <div class="section-label">Education</div>
+<!-- ═══ RESEARCH ════════════════════════════════════════════════ -->
+<section id="research">
+  <div class="section-label">Research</div>
   <div class="divider"></div>
-  <h2 class="section-title reveal">Academic <span>Background</span></h2>
-  <p class="section-desc reveal">Dual-degree pursuit across two of India's leading tech institutions.</p>
-  <div class="edu-grid">
-    <div class="edu-card reveal">
-      <div class="edu-logo">🎓</div>
-      <div class="edu-degree">Bachelor of Science</div>
-      <div class="edu-school">Birla Institute of Technology and Science (BITS Pilani)</div>
-      <div class="edu-period"><i class="fa-regular fa-calendar"></i> Aug 2024 – Present</div>
-      <div class="edu-cgpa"><i class="fa-solid fa-star"></i> CGPA: 8.3</div>
-      <ul class="edu-bullets">
-        <li>Representative Member at NlogN CP Club</li>
-      </ul>
-    </div>
-    <div class="edu-card reveal">
-      <div class="edu-logo">🏫</div>
-      <div class="edu-degree">Bachelor of Science</div>
-      <div class="edu-school">Scaler School of Technology, Bengaluru</div>
-      <div class="edu-period"><i class="fa-regular fa-calendar"></i> Aug 2024 – Present</div>
-      <div class="edu-cgpa"><i class="fa-solid fa-star"></i> CGPA: 8.3</div>
-      <ul class="edu-bullets">
-        <li>Core Member at SST Open Source Society</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  <h2 class="section-title reveal">What I <span>Study</span></h2>
+  <p class="section-desc reveal">How vision transformers route global information through a few anchor tokens.</p>
 
-<!-- ═══ SKILLS ══════════════════════════════════════════════════ -->
-<section id="skills">
-  <div class="section-label">Technical Skills</div>
-  <div class="divider"></div>
-  <h2 class="section-title reveal">What I <span>Know</span></h2>
-  <p class="section-desc reveal">A broad toolkit spanning ML research, backend systems, and data engineering.</p>
-  <div class="skills-container">
-    <div class="skill-cat reveal">
-      <div class="cat-header">
-        <div class="cat-icon"><i class="fa-solid fa-code"></i></div>
-        <span class="cat-name">Programming Languages</span>
-      </div>
-      <div class="skill-pills">
-        <span class="skill-pill">Python</span>
-        <span class="skill-pill">C++</span>
-        <span class="skill-pill">Java</span>
-        <span class="skill-pill">Go</span>
-        <span class="skill-pill">SQL</span>
-      </div>
-    </div>
-    <div class="skill-cat reveal">
-      <div class="cat-header">
-        <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
-        <span class="cat-name">ML / AI Frameworks</span>
-      </div>
-      <div class="skill-pills">
-        <span class="skill-pill">PyTorch</span>
-        <span class="skill-pill">TensorFlow</span>
-        <span class="skill-pill">MLFlow</span>
-        <span class="skill-pill">FastAPI</span>
-        <span class="skill-pill">Vite</span>
-      </div>
-    </div>
-    <div class="skill-cat reveal">
-      <div class="cat-header">
-        <div class="cat-icon"><i class="fa-solid fa-layer-group"></i></div>
-        <span class="cat-name">Frameworks & Libraries</span>
-      </div>
-      <div class="skill-pills">
-        <span class="skill-pill">React</span>
-        <span class="skill-pill">Spring Boot</span>
-        <span class="skill-pill">MERN Stack</span>
-      </div>
-    </div>
-    <div class="skill-cat reveal">
-      <div class="cat-header">
-        <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
-        <span class="cat-name">Databases</span>
-      </div>
-      <div class="skill-pills">
-        <span class="skill-pill">PostgreSQL</span>
-        <span class="skill-pill">MySQL</span>
-        <span class="skill-pill">SQLite</span>
-        <span class="skill-pill">MongoDB</span>
-      </div>
-    </div>
-    <div class="skill-cat reveal">
-      <div class="cat-header">
-        <div class="cat-icon"><i class="fa-solid fa-wrench"></i></div>
-        <span class="cat-name">Tools & Platforms</span>
-      </div>
-      <div class="skill-pills">
-        <span class="skill-pill">Docker</span>
-        <span class="skill-pill">Git</span>
-        <span class="skill-pill">GitHub</span>
-        <span class="skill-pill">Kaggle</span>
-        <span class="skill-pill">Linux</span>
-      </div>
-    </div>
-    <div class="skill-cat reveal">
-      <div class="cat-header">
-        <div class="cat-icon"><i class="fa-solid fa-comments"></i></div>
-        <span class="cat-name">Languages & Soft Skills</span>
-      </div>
-      <div class="skill-pills">
-        <span class="skill-pill">English</span>
-        <span class="skill-pill">Hindi</span>
-        <span class="skill-pill">French</span>
-        <span class="skill-pill">Problem Solving</span>
-        <span class="skill-pill">Adaptability</span>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-role">Anchors That Move Without Collapsing: Exclusive-Region Anchor Routing for Vision Transformers</span>
+          <span class="exp-badge">arXiv 2026</span>
+        </div>
+        <div class="exp-company">Sole author · arXiv:2611.27855 · abstract accepted at IRIS'27, IIT Madras</div>
+        <ul class="exp-bullets">
+          <li>Showed in a controlled study of six anchor designs that soft anchor routing collapses (pooling-map similarity 0.99); an exclusive partition is 2.4–3.6 points more accurate than Representative Attention on CIFAR-100, matched component by component.</li>
+          <li>Proposed focus anchors, placed at learned importance peaks while keeping exclusive regions: +1.5 points (95% CI [0.5, 2.6]) over fixed partitions on cluttered images; on full-HD traffic signs they match dense windowed attention at ~1/5 of the FLOPs.</li>
+          <li>Ran 100+ training runs on rented A100s with paired-CI evaluation and reported the negative results (ResNet-18 wins from scratch; anchors never save memory). Code and logs are public.</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">PyTorch</span>
+          <span class="tech-tag">timm</span>
+          <span class="tech-tag">FlashAttention</span>
+          <span class="tech-tag">A100</span>
+        </div>
+        <div class="project-footer" style="margin-top:16px;">
+          <div class="project-links">
+            <a href="https://arxiv.org/abs/2611.27855" target="_blank" class="project-link">
+              <i class="fa-solid fa-file-lines"></i> Paper
+            </a>
+            <a href="https://github.com/ARRY7686/Partitioned-Residual-Anchor-Routing-Transformer" target="_blank" class="project-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1054,28 +983,31 @@
   <div class="section-label">Projects</div>
   <div class="divider"></div>
   <h2 class="section-title reveal">What I've <span>Built</span></h2>
-  <p class="section-desc reveal">End-to-end ML systems from research prototype to deployable product.</p>
+  <p class="section-desc reveal">End-to-end ML systems, deployed with live demos.</p>
   <div class="projects-grid">
 
     <div class="project-card reveal">
       <div class="project-num">01</div>
       <div class="project-title">Multi-Modal Disease Detection System</div>
-      <p class="project-desc">Multi-Modal Medical Diagnosis Prototype with Cross-Attention Fusion supporting 25-class multi-label output across 3 imaging modalities.</p>
+      <p class="project-desc">Image + clinical-metadata classifiers for chest X-ray (NIH), skin lesion and brain MRI, with a live demo on held-out cases.</p>
       <ul class="project-highlights">
-        <li>Bidirectional cross-attention fusion across 2 transformer layers with 8 attention heads</li>
-        <li>Automatic modality routing — MobileNetV3-Small auto-detects chest X-ray, skin lesion, or brain MRI</li>
-        <li>Dual explainability — Grad-CAM heatmaps + attention-weighted token importance</li>
-        <li>Three-phase Kaggle training pipeline (image → text → fusion)</li>
+        <li>Found and fixed a train/test leak that inflated chest AUROC to 0.989; honest held-out macro AUROC 0.775</li>
+        <li>Ablation showing fusion adds nothing over image-only</li>
+        <li>Skin AUROC 0.957 and brain accuracy 0.954; weights published on the Hugging Face Hub</li>
       </ul>
       <div class="tech-tags">
+        <span class="tech-tag">Python</span>
         <span class="tech-tag">PyTorch</span>
-        <span class="tech-tag">FastAPI</span>
-        <span class="tech-tag">Vite</span>
+        <span class="tech-tag">Hugging Face Hub</span>
+        <span class="tech-tag">Hugging Face Spaces</span>
       </div>
       <div class="project-footer" style="margin-top:16px;">
         <div class="project-links">
-          <a href="https://github.com/ARRY7686" target="_blank" class="project-link">
+          <a href="https://github.com/ARRY7686/Multi-Modal-Disease-Detection-System" target="_blank" class="project-link">
             <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="https://huggingface.co/spaces/Arry7868/Multi-Modal-Disease-Detection" target="_blank" class="project-link">
+            <i class="fa-solid fa-play"></i> Demo
           </a>
         </div>
       </div>
@@ -1083,45 +1015,23 @@
 
     <div class="project-card reveal">
       <div class="project-num">02</div>
-      <div class="project-title">Trigger-Aware Hybrid Search Optimization</div>
-      <p class="project-desc">Hybrid search system (BFS, IDDFS, Beam Search) for dynamic state-space exploration under constraints, with RL integration.</p>
+      <div class="project-title">Box Box F1 — Race Simulator</div>
+      <p class="project-desc">Race replay and simulator on OpenF1 data (2023+) with team radio, race switcher and shareable race links, deployed on Hugging Face Spaces.</p>
       <ul class="project-highlights">
-        <li>5× speedup in search throughput via optimized hashing and state encoding</li>
-        <li>Adaptive compute allocation strategies across hierarchical levels</li>
-        <li>Reinforcement learning signals with prioritized replay</li>
+        <li>ML pit-stop what-if: lap-time model + race simulation giving calibrated 10-lap position projections</li>
+        <li>pytest suite and CI that tests every push, auto-deploys to the Space and refreshes race data weekly</li>
       </ul>
       <div class="tech-tags">
-        <span class="tech-tag">Data Engineering</span>
-        <span class="tech-tag">ML Algorithms</span>
         <span class="tech-tag">Python</span>
+        <span class="tech-tag">Docker</span>
+        <span class="tech-tag">GitHub Actions</span>
+        <span class="tech-tag">pytest</span>
+        <span class="tech-tag">OpenF1 API</span>
       </div>
       <div class="project-footer" style="margin-top:16px;">
         <div class="project-links">
-          <a href="https://www.kaggle.com/aadigupta1601" target="_blank" class="project-link">
-            <i class="fa-solid fa-chart-simple"></i> Kaggle
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <div class="project-num">03</div>
-      <div class="project-title">Medical Imaging ML Dataset</div>
-      <p class="project-desc">Radiomics-style numerical datasets from Brain MRI and Chest X-Ray images for downstream ML tasks with structured feature engineering.</p>
-      <ul class="project-highlights">
-        <li>Engineered intensity statistics, texture proxies, and spatial distribution features</li>
-        <li>Class balance checks and reproducible preprocessing pipelines</li>
-        <li>ML-ready datasets designed for easy downstream integration</li>
-      </ul>
-      <div class="tech-tags">
-        <span class="tech-tag">PyTorch</span>
-        <span class="tech-tag">TensorFlow</span>
-        <span class="tech-tag">Data Analysis</span>
-      </div>
-      <div class="project-footer" style="margin-top:16px;">
-        <div class="project-links">
-          <a href="https://www.kaggle.com/aadigupta1601" target="_blank" class="project-link">
-            <i class="fa-solid fa-chart-simple"></i> Kaggle
+          <a href="https://github.com/ARRY7686/box-box-f1" target="_blank" class="project-link">
+            <i class="fa-brands fa-github"></i> GitHub
           </a>
         </div>
       </div>
@@ -1130,48 +1040,161 @@
   </div>
 </section>
 
+<!-- ═══ EDUCATION ══════════════════════════════════════════════ -->
+<section id="education">
+  <div class="section-label">Education</div>
+  <div class="divider"></div>
+  <h2 class="section-title reveal">Academic <span>Background</span></h2>
+  <p class="section-desc reveal">Two bachelor's degrees in Computer Science, pursued in parallel.</p>
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <div class="edu-logo">🎓</div>
+      <div class="edu-degree">Bachelor of Science in Computer Science</div>
+      <div class="edu-school">Birla Institute of Technology and Science, Pilani</div>
+      <div class="edu-period"><i class="fa-regular fa-calendar"></i> Aug 2024 – 2028 · Pilani, India</div>
+      <div class="edu-cgpa"><i class="fa-solid fa-star"></i> CGPA: 8.26</div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-logo">🏫</div>
+      <div class="edu-degree">Bachelor's in Computer Science</div>
+      <div class="edu-school">Scaler School of Technology</div>
+      <div class="edu-period"><i class="fa-regular fa-calendar"></i> Aug 2024 – 2028 · Bangalore, India</div>
+      <div class="edu-cgpa"><i class="fa-solid fa-star"></i> CGPA: 7.72</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SKILLS ══════════════════════════════════════════════════ -->
+<section id="skills">
+  <div class="section-label">Technical Skills</div>
+  <div class="divider"></div>
+  <h2 class="section-title reveal">What I <span>Know</span></h2>
+  <p class="section-desc reveal">The toolkit behind my research, benchmarks and projects.</p>
+  <div class="skills-container">
+    <div class="skill-cat reveal">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fa-solid fa-code"></i></div>
+        <span class="cat-name">Languages</span>
+      </div>
+      <div class="skill-pills">
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">Java</span>
+        <span class="skill-pill">C++</span>
+        <span class="skill-pill">SQL</span>
+      </div>
+    </div>
+    <div class="skill-cat reveal">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
+        <span class="cat-name">Backend &amp; Frameworks</span>
+      </div>
+      <div class="skill-pills">
+        <span class="skill-pill">PyTorch</span>
+        <span class="skill-pill">Hugging Face Transformers</span>
+        <span class="skill-pill">PEFT (LoRA)</span>
+        <span class="skill-pill">timm</span>
+        <span class="skill-pill">FlashAttention</span>
+      </div>
+    </div>
+    <div class="skill-cat reveal">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fa-solid fa-cloud"></i></div>
+        <span class="cat-name">Cloud &amp; DevOps</span>
+      </div>
+      <div class="skill-pills">
+        <span class="skill-pill">Docker</span>
+        <span class="skill-pill">GitHub Actions</span>
+        <span class="skill-pill">Hugging Face Spaces</span>
+        <span class="skill-pill">vast.ai GPU instances</span>
+      </div>
+    </div>
+    <div class="skill-cat reveal">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fa-solid fa-server"></i></div>
+        <span class="cat-name">Distributed Systems</span>
+      </div>
+      <div class="skill-pills">
+        <span class="skill-pill">Multi-GPU training</span>
+        <span class="skill-pill">NVIDIA MPS</span>
+        <span class="skill-pill">Mixed precision (bf16/fp16)</span>
+      </div>
+    </div>
+    <div class="skill-cat reveal">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
+        <span class="cat-name">Databases</span>
+      </div>
+      <div class="skill-pills">
+        <span class="skill-pill">PostgreSQL</span>
+        <span class="skill-pill">MySQL</span>
+        <span class="skill-pill">MongoDB</span>
+      </div>
+    </div>
+    <div class="skill-cat reveal">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <span class="cat-name">AI &amp; Data</span>
+      </div>
+      <div class="skill-pills">
+        <span class="skill-pill">LightGBM</span>
+        <span class="skill-pill">scikit-learn</span>
+        <span class="skill-pill">pandas</span>
+        <span class="skill-pill">NumPy</span>
+        <span class="skill-pill">llama.cpp</span>
+      </div>
+    </div>
+    <div class="skill-cat reveal">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <span class="cat-name">Core Concepts</span>
+      </div>
+      <div class="skill-pills">
+        <span class="skill-pill">LLM fine-tuning</span>
+        <span class="skill-pill">Vision transformers</span>
+        <span class="skill-pill">Cross-validation design</span>
+        <span class="skill-pill">LLM agent security</span>
+      </div>
+    </div>
+    <div class="skill-cat reveal">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fa-solid fa-wrench"></i></div>
+        <span class="cat-name">Tools</span>
+      </div>
+      <div class="skill-pills">
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">Linux</span>
+        <span class="skill-pill">pytest</span>
+        <span class="skill-pill">Kaggle</span>
+        <span class="skill-pill">LaTeX</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══ ACHIEVEMENTS ════════════════════════════════════════════ -->
 <section id="achievements">
   <div class="section-label">Recognition</div>
   <div class="divider"></div>
   <h2 class="section-title reveal">Awards &amp; <span>Achievements</span></h2>
-  <p class="section-desc reveal">Milestones earned through competitions, open-source contributions, and consistent learning.</p>
+  <p class="section-desc reveal">Competition results and security research.</p>
   <div class="ach-grid">
     <div class="ach-card reveal">
-      <div class="ach-icon">🏅</div>
-      <div class="ach-type">Award</div>
-      <div class="ach-title">Kaggle Datasets GrandMaster</div>
-      <p class="ach-desc">Achieved GrandMaster tier on Kaggle for high-quality dataset contributions recognized by the global ML community.</p>
+      <div class="ach-icon">🥈</div>
+      <div class="ach-type">Kaggle</div>
+      <div class="ach-title">Kaggle Silver Medal</div>
+      <p class="ach-desc">AI Agent Security: Multi-Step Tool Attacks (OpenAI × Google × IEEE): 41st of 4,186 (top 1%).</p>
     </div>
     <div class="ach-card reveal">
-      <div class="ach-icon">📓</div>
-      <div class="ach-type">Award</div>
-      <div class="ach-title">Kaggle Notebook Expert</div>
-      <p class="ach-desc">Recognized as a Notebook Expert on Kaggle for reproducible and insightful ML notebooks.</p>
+      <div class="ach-icon">🩻</div>
+      <div class="ach-type">Kaggle</div>
+      <div class="ach-title">RSNA Knee Abnormality Detection</div>
+      <p class="ach-desc">$77K prize pool: 855th of 6,299 teams (top 14%) on 12-label knee MRI classification.</p>
     </div>
     <div class="ach-card reveal">
-      <div class="ach-icon">🏆</div>
-      <div class="ach-type">Achievement</div>
-      <div class="ach-title">Shaastra Programming Contest Finalist</div>
-      <p class="ach-desc">Competed in CP-Potpourri &amp; SPC 2025 at IIT Madras — one of India's most prestigious engineering fests.</p>
-    </div>
-    <div class="ach-card reveal">
-      <div class="ach-icon">🌐</div>
-      <div class="ach-type">Contribution</div>
-      <div class="ach-title">HacktoberFest 2024</div>
-      <p class="ach-desc">Achieved multiple contributions to open-source projects during HacktoberFest 2024.</p>
-    </div>
-    <div class="ach-card reveal">
-      <div class="ach-icon">💼</div>
-      <div class="ach-type">Work</div>
-      <div class="ach-title">ML Analyst @ YC W24 Startup</div>
-      <p class="ach-desc">Selected to work at Datacurve.ai (backed by Y Combinator W24) building evaluation benchmarks for foundation models.</p>
-    </div>
-    <div class="ach-card reveal">
-      <div class="ach-icon">🤝</div>
-      <div class="ach-type">Community</div>
-      <div class="ach-title">NlogN CP Club Representative</div>
-      <p class="ach-desc">Representative member at the NlogN Competitive Programming Club at BITS Pilani.</p>
+      <div class="ach-icon">🛡️</div>
+      <div class="ach-type">Security Finding</div>
+      <div class="ach-title">Deferred Harmony Injection</div>
+      <p class="ach-desc">Tool-call JSON re-tokenised into GPT-OSS Harmony special tokens on the next turn.</p>
     </div>
   </div>
 </section>
@@ -1184,13 +1207,13 @@
     <div class="contact-intro reveal">
       <h2 class="section-title">Let's <span>Connect</span></h2>
       <p>
-        I'm always open to discussing new projects, research collaborations, or opportunities in ML
-        engineering. Whether it's a startup idea or a conversation about AI — reach out!
+        I'm always open to discussing research collaborations or opportunities in ML engineering.
+        Reach out!
       </p>
       <div class="contact-links">
-        <a href="mailto:aadigupta2007@yahoo.com" class="contact-link-card">
+        <a href="mailto:aadi.24bcs10167@sst.scaler.com" class="contact-link-card">
           <div class="cl-icon"><i class="fa-solid fa-envelope"></i></div>
-          <div class="cl-info"><label>Email</label><span>aadigupta2007@yahoo.com</span></div>
+          <div class="cl-info"><label>Email</label><span>aadi.24bcs10167@sst.scaler.com</span></div>
         </a>
         <a href="https://www.linkedin.com/in/aadi-gupta-600605247" target="_blank" class="contact-link-card">
           <div class="cl-icon"><i class="fa-brands fa-linkedin"></i></div>
@@ -1200,9 +1223,9 @@
           <div class="cl-icon"><i class="fa-brands fa-github"></i></div>
           <div class="cl-info"><label>GitHub</label><span>ARRY7686</span></div>
         </a>
-        <a href="https://www.kaggle.com/aadigupta1601" target="_blank" class="contact-link-card">
+        <a href="https://www.kaggle.com/aadigupta7686" target="_blank" class="contact-link-card">
           <div class="cl-icon"><i class="fa-solid fa-chart-simple"></i></div>
-          <div class="cl-info"><label>Kaggle</label><span>aadigupta1601</span></div>
+          <div class="cl-info"><label>Kaggle</label><span>aadigupta7686</span></div>
         </a>
       </div>
     </div>
@@ -1231,12 +1254,12 @@
 
 <!-- ═══ FOOTER ══════════════════════════════════════════════════ -->
 <footer>
-  <p>© 2025 Aadi Gupta. All rights reserved. Designed with passion and code.</p>
+  <p>© 2026 Aadi Gupta. All rights reserved. Designed with passion and code.</p>
   <div class="footer-socials">
     <a href="https://github.com/ARRY7686" target="_blank"><i class="fa-brands fa-github"></i></a>
     <a href="https://www.linkedin.com/in/aadi-gupta-600605247" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://www.kaggle.com/aadigupta1601" target="_blank"><i class="fa-solid fa-k"></i></a>
-    <a href="mailto:aadigupta2007@yahoo.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.kaggle.com/aadigupta7686" target="_blank"><i class="fa-solid fa-k"></i></a>
+    <a href="mailto:aadi.24bcs10167@sst.scaler.com"><i class="fa-solid fa-envelope"></i></a>
   </div>
 </footer>
 
@@ -1372,7 +1395,7 @@
         btn.style.background = '';
         btn.disabled         = false;
         formStatus.style.color = '#f87171';
-        formStatus.textContent = 'Failed to send. Email me at aadigupta2007@yahoo.com';
+        formStatus.textContent = 'Failed to send. Email me at aadi.24bcs10167@sst.scaler.com';
       });
   });
 
@@ -1381,13 +1404,14 @@
     entries.forEach(e => {
       if (!e.isIntersecting) return;
       e.target.querySelectorAll('.stat-num').forEach(el => {
-        const target = parseFloat(el.textContent);
+        const finalText = el.textContent;
+        const target = parseFloat(finalText);
         if (isNaN(target)) return;
         let start = 0;
         const step = target / 40;
         const timer = setInterval(() => {
           start += step;
-          if (start >= target) { el.textContent = el.textContent; clearInterval(timer); return; }
+          if (start >= target) { el.textContent = finalText; clearInterval(timer); return; }
           el.textContent = Number.isInteger(target) ? Math.floor(start) : start.toFixed(1);
         }, 30);
       });
