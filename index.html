@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <style>
     /* ─── Reset & Tokens ─────────────────────────────────────── */
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -618,15 +617,10 @@
     .ach-desc { font-size: 0.85rem; color: var(--muted); }
 
     /* ─── Contact ────────────────────────────────────────────── */
-    #contact { background: var(--bg2); }
-    .contact-wrap {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: start;
-    }
+    #contact { background: var(--bg); }
+    .contact-wrap { max-width: 820px; margin: 0 auto; }
     .contact-intro p { color: var(--muted); margin-bottom: 32px; }
-    .contact-links { display: flex; flex-direction: column; gap: 16px; }
+    .contact-links { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .contact-link-card {
       display: flex; align-items: center; gap: 16px;
       background: var(--card);
@@ -727,6 +721,7 @@
       .avatar-ring { width: 220px; height: 220px; }
       .avatar-initials { font-size: 4rem; }
       .about-grid, .edu-grid, .contact-wrap { grid-template-columns: 1fr; }
+      .contact-links { grid-template-columns: 1fr; }
       .projects-grid, .ach-grid, .skills-container { grid-template-columns: 1fr; }
       .about-highlights { grid-template-columns: 1fr 1fr; }
       .nav-links, .nav-cta { display: none; }
@@ -1282,25 +1277,6 @@
       </div>
     </div>
 
-    <div class="contact-form reveal">
-      <h3>Send a Message</h3>
-      <form id="form">
-        <div class="form-group">
-          <label>Your Name</label>
-          <input type="text" name="from_name" placeholder="John Doe" required />
-        </div>
-        <div class="form-group">
-          <label>Your Email</label>
-          <input type="email" name="from_email" placeholder="john@example.com" required />
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea name="message" placeholder="Let's collaborate on something amazing..." required></textarea>
-        </div>
-        <input type="submit" id="button" class="form-submit" value="Send Message" />
-        <p id="form-status" style="margin-top:12px; font-size:0.88rem; text-align:center; min-height:20px;"></p>
-      </form>
-    </div>
   </div>
 </section>
 
@@ -1404,52 +1380,6 @@
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-  /* ─── EmailJS Init ─────────────────────────────────────────── */
-  const EMAILJS_PUBLIC_KEY      = '';
-  const EMAILJS_SERVICE_ID      = '';       // Your service ID (e.g. service_abc1234)
-  const EMAILJS_NOTIFY_TEMPLATE = '';  // Template 1: notifies YOU with the message
-  const EMAILJS_REPLY_TEMPLATE  = ''; // Template 2: auto-reply to the client
-
-  emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-
-  /* ─── Contact Form ─────────────────────────────────────────── */
-  const btn = document.getElementById('button');
-  const formStatus = document.getElementById('form-status');
-
-  document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    btn.value    = 'Sending...';
-    btn.disabled = true;
-    formStatus.style.color   = '';
-    formStatus.textContent   = '';
-
-    // Send notification to Aadi (template 1) then auto-reply to client (template 2)
-    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_NOTIFY_TEMPLATE, this)
-      .then(() => emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_REPLY_TEMPLATE, this))
-      .then(() => {
-        btn.value            = 'Message Sent! ✓';
-        btn.style.background = 'linear-gradient(135deg,#5be0c5,#3bbfa8)';
-        formStatus.style.color   = '#5be0c5';
-        formStatus.textContent   = 'Thanks! Check your inbox for a confirmation email.';
-        this.reset();
-        setTimeout(() => {
-          btn.value            = 'Send Message';
-          btn.style.background = '';
-          btn.disabled         = false;
-          formStatus.textContent = '';
-        }, 5000);
-      })
-      .catch((err) => {
-        console.error('EmailJS error:', JSON.stringify(err));
-        btn.value            = 'Send Message';
-        btn.style.background = '';
-        btn.disabled         = false;
-        formStatus.style.color = '#f87171';
-        formStatus.textContent = 'Failed to send. Email me at aadi.24bcs10167@sst.scaler.com';
-      });
-  });
 
   /* ─── Counter animation ────────────────────────────────────── */
   const statsObserver = new IntersectionObserver(entries => {
